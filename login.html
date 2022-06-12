@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <form class="box" action="index.html" method="post">
+        <h1 style="font-family: sans-serif;">Login</h1>
+        <input type="text" name="" placeholder="Enter" id="username">
+        <input type="Password" name="" placeholder="Enter password" id="password">
+        <input type="Submit" name="" value="Login" onclick="validate()">
+    </form>
+    <script>
+        function validate() {
+            let username = document.getElementById("username").Value
+            let Password = document.getElementById("password").value
+            if (username == "Raivan" && Password == "raivan15") {
+                alert("login success")
+                return false
+            } else {
+                alert("Login failed")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
